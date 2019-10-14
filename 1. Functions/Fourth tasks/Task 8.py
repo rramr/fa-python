@@ -16,7 +16,10 @@ def sortByAmountAssessments(lstItem):
 
 def table(arr, mode, rvr):
     arr.sort(key = mode, reverse = rvr)
-    print("\n", "Режим : ", mode, "\n", "Реверс : ", rvr, "\n", "Результат : ", arr, "\n")
+    print("\n", "Режим : ", mode, "\n", "Реверс : ", rvr, "\n", "Результат : ", "\n")
+    print('{:<15} {:<12}'.format('Фамилия', 'Оценки'))
+    for i in range(int(len(arr))):
+        print('{:<15} {:<4} {:<4} {:<4}'.format(arr[i][0], arr[i][1], arr[i][2], arr[i][3]))
 
 lst = [['Иванов', 3,5,4], ['Петров', 4, 5, 5], ['Сидоров', 3, 3, 3], ['Николаев', 4, 4, 3]]
 
