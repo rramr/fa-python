@@ -1,0 +1,6 @@
+readline
+read
+readliness
+write
+writelines
+print
